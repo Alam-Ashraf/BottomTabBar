@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BottomTabBar.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Bottom Tab Bar"
+    ios:Page.UseSafeArea="true"
+    mc:Ignorable="d">
+
+    <StackLayout BackgroundColor="White" Spacing="0">
+
+        <Frame
+            Margin="0,0,0,-5"
+            Padding="0,5,0,5"
+            CornerRadius="0"
+            HasShadow="True"
+            VerticalOptions="EndAndExpand">
+
+
+            <StackLayout HeightRequest="60" Spacing="0">
+
+                <Grid
+                    BackgroundColor="White"
+                    ColumnSpacing="1"
+                    HorizontalOptions="FillAndExpand"
+                    RowSpacing="0"
+                    VerticalOptions="CenterAndExpand">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame
+                        x:Name="FrameSelected"
+                        Margin="0,-30,0,0"
+                        Padding="5"
+                        BackgroundColor="White"
+                        BorderColor="White"
+                        CornerRadius="30"
+                        HeightRequest="50"
+                        HorizontalOptions="CenterAndExpand"
+                        IsVisible="False"
+                        VerticalOptions="Start"
+                        WidthRequest="50">
+
+                        <Frame
+                            Padding="10"
+                            BackgroundColor="Red"
+                            CornerRadius="25"
+                            HasShadow="False"
+                            HeightRequest="35"
+                            WidthRequest="35">
+
+                            <Image x:Name="SelectedImge" Source="home_white" />
+
+                        </Frame>
+
+                    </Frame>
+
+
+                    <!--<Frame
+                        x:Name="FrameSelected"
+                        Margin="0,-30,0,0"
+                        Padding="5"
+                        BackgroundColor="White"
+                        BorderColor="White"
+                        CornerRadius="60"
+                        HeightRequest="45"
+                        HorizontalOptions="CenterAndExpand"
+                        IsVisible="False"
+                        VerticalOptions="Start"
+                        WidthRequest="45">
+
+                        <Frame
+                            Padding="10"
+                            BackgroundColor="Red"
+                            CornerRadius="50"
+                            HeightRequest="35"
+                            WidthRequest="35">
+
+                            <Image x:Name="SelectedImge" Source="home_white" />
+
+                        </Frame>
+
+                    </Frame>-->
+
+                    <!--  Home  -->
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                        <Image
+                            x:Name="ImgHome"
+                            HeightRequest="30"
+                            HorizontalOptions="CenterAndExpand"
+                            Source="home_red"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="30" />
+
+                        <Label
+                            x:Name="LblHome"
+                            HorizontalOptions="CenterAndExpand"
+                            IsVisible="False"
+                            Text="Home"
+                            TextColor="Black" />
+
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnHomeClick" />
+                        </StackLayout.GestureRecognizers>
+
+                    </StackLayout>
+
+                    <!--  Email  -->
+                    <StackLayout
+                        Grid.Column="1"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Image
+                            x:Name="ImgEmail"
+                            HeightRequest="30"
+                            HorizontalOptions="CenterAndExpand"
+                            Source="email_red"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="30" />
+
+                        <Label
+                            x:Name="LblEmail"
+                            HorizontalOptions="CenterAndExpand"
+                            IsVisible="False"
+                            Text="Email"
+                            TextColor="Black" />
+
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnEmailClick" />
+                        </StackLayout.GestureRecognizers>
+
+                    </StackLayout>
+
+                    <!--  Moon  -->
+                    <StackLayout
+                        Grid.Column="2"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Image
+                            x:Name="ImgSleep"
+                            HeightRequest="30"
+                            HorizontalOptions="CenterAndExpand"
+                            Source="moon_red"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="30" />
+
+                        <Label
+                            x:Name="LblSleep"
+                            HorizontalOptions="CenterAndExpand"
+                            IsVisible="False"
+                            Text="Sleep"
+                            TextColor="Black" />
+
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSleepClick" />
+                        </StackLayout.GestureRecognizers>
+
+                    </StackLayout>
+
+                    <!--  Headphones  -->
+                    <StackLayout
+                        Grid.Column="3"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Image
+                            x:Name="ImgMusic"
+                            HeightRequest="30"
+                            HorizontalOptions="CenterAndExpand"
+                            Source="headphones_red"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="30" />
+
+                        <Label
+                            x:Name="LblMusic"
+                            HorizontalOptions="CenterAndExpand"
+                            IsVisible="False"
+                            Text="Music"
+                            TextColor="Black" />
+
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMusicClick" />
+                        </StackLayout.GestureRecognizers>
+
+                    </StackLayout>
+
+                    <!--  User  -->
+                    <StackLayout
+                        Grid.Column="4"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Image
+                            x:Name="ImgUser"
+                            HeightRequest="30"
+                            HorizontalOptions="CenterAndExpand"
+                            Source="man_red"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="30" />
+
+                        <Label
+                            x:Name="LblUser"
+                            HorizontalOptions="CenterAndExpand"
+                            IsVisible="False"
+                            Text="User"
+                            TextColor="Black" />
+
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnUserClick" />
+                        </StackLayout.GestureRecognizers>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </StackLayout>
+
+        </Frame>
+
+        <StackLayout
+            Margin="0,2,0,0"
+            BackgroundColor="Red"
+            HeightRequest="3"
+            VerticalOptions="End" />
+
+    </StackLayout>
+
+</ContentPage>

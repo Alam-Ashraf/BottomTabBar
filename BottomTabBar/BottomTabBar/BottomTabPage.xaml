@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BottomTabBarDemo.BottomTabPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tab="clr-namespace:BottomTabBar;assembly=BottomTabBar"
+    Title="Bottom Tab Bar"
+    mc:Ignorable="d">
+
+    <ContentPage.Content>
+        
+        <StackLayout BackgroundColor="Black">
+
+            <tab:BottomTabBar
+                x:Name="BottomTabBarContainer"
+                BarBackgroundColor="White"
+                BarLineColor="Red"
+                BarSelectedColor="Red"
+                BarTextColor="Black"
+                Tapped="BottomTabBarContainer_Tapped"
+                VerticalOptions="EndAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

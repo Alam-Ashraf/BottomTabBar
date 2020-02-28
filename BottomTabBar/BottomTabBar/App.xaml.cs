@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BottomTabBar
+namespace BottomTabBarDemo
 {
     public partial class App : Application
     {
@@ -10,7 +10,7 @@ namespace BottomTabBar
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage( new MainPage());
+            MainPage = new NavigationPage( new BottomTabPage());
         }
 
         protected override void OnStart()

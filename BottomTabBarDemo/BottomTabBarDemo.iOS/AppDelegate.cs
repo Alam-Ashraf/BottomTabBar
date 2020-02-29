@@ -27,5 +27,51 @@ namespace BottomTabBarDemo.iOS
 
             return base.FinishedLaunching(app, options);
         }
+
+
+        public override void OnActivated(UIApplication uiApplication)
+        {
+            SetStatusBarColor();
+
+            base.OnActivated(uiApplication);
+        }
+
+
+        public static void SetStatusBarColor()
+        {
+            // Set StatusBar Color
+            if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
+            {
+                //--------- ios 13 and above---------
+
+                Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+                {
+                    // If VS has updated to the latest version , you can use StatusBarManager , else use the first line code
+                    //UIView statusBar = new UIView(UIApplication.SharedApplication.StatusBarFrame);
+                    UIView statusBar = new UIView(UIApplication.SharedApplication.KeyWindow.WindowScene.StatusBarManager.StatusBarFrame);
+                    statusBar.BackgroundColor = UIColor.FromRGB(255, 0, 0);
+                    UIApplication.SharedApplication.KeyWindow.AddSubview(statusBar);
+
+                });
+
+            }
+            else
+            {
+                //--------- ios below 13 ---------
+
+                Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+                {
+                    UIView statusBar = UIApplication.SharedApplication.ValueForKey(new NSString("statusBar")) as UIView;
+                    if (statusBar.RespondsToSelector(new ObjCRuntime.Selector("setBackgroundColor:")))
+                    {
+                        statusBar.BackgroundColor = UIColor.FromRGB(255, 0, 0);
+                        UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.BlackOpaque;
+                    }
+
+                });
+            }
+        }
     }
+
 }
+

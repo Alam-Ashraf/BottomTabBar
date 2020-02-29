@@ -1,5 +1,7 @@
 # Bottom Tab Bar
 
+[Nuget : BottomTabBar Version [1.0.0]](https://www.nuget.org/packages/BottomTabBar/)
+
 ![BottomTabBar](https://user-images.githubusercontent.com/48187633/73196594-dfbdb980-4155-11ea-8846-2e9f03bee9cd.gif)
 
 ![screen1](https://user-images.githubusercontent.com/48187633/73193926-5b693780-4151-11ea-8328-9973ef7ce855.png)

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="BottomTabBarDemo.BottomTabPage"
+    x:Class="BottomTabBarDemo.FixedTabPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:tab="clr-namespace:BottomTabBar;assembly=BottomTabBar"
-    Title="Bottom Tab Bar"
+    Title="Fixed Tab"
     mc:Ignorable="d">
 
     <ContentPage.Content>
-        
-        <StackLayout BackgroundColor="Black">
+
+        <StackLayout BackgroundColor="#E6E6E6">
 
             <tab:BottomTabBar
                 x:Name="BottomTabBarContainer"
@@ -19,9 +19,11 @@
                 BarLineColor="Red"
                 BarSelectedColor="Red"
                 BarTextColor="Black"
-                Tapped="BottomTabBarContainer_Tapped"
+                TabType="Fixed"
+                Tapped="OnTabItemClick"
                 VerticalOptions="EndAndExpand" />
 
         </StackLayout>
     </ContentPage.Content>
+
 </ContentPage>

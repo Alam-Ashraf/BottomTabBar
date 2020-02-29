@@ -11,9 +11,9 @@ using Xamarin.Forms.Xaml;
 namespace BottomTabBarDemo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BottomTabPage : ContentPage
+    public partial class FixedTabPage : ContentPage
     {
-        public BottomTabPage()
+        public FixedTabPage()
         {
             InitializeComponent();
 
@@ -28,9 +28,9 @@ namespace BottomTabBarDemo
             BottomTabBarContainer.TabItemsSource = tabs;
         }
 
-        private void BottomTabBarContainer_Tapped(object sender, TabItem e)
+        private void OnTabItemClick(object sender, TabItem e)
         {
-
+            // Tab Item Click
         }
     }
 }

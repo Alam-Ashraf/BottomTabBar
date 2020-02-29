@@ -6,17 +6,9 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Application.Resources>
-        <ResourceDictionary>
-            <Color x:Key="accentColor1">#F85A2F</Color>
-            <Color x:Key="accentColor2">#C94A28</Color>
-            <Color x:Key="primaryColor1">#222222</Color>
-            <Color x:Key="primaryColor2">#2E2E2E</Color>
-            <Color x:Key="backgroundColor1">#FFFFFF</Color>
-            <Color x:Key="backgroundColor2">#F8F8F8</Color>
-            <Color x:Key="textColor">#757575</Color>
 
+        <ResourceDictionary>
             <Style TargetType="NavigationPage">
                 <!--  Doesn't change anything!  -->
                 <Setter Property="BarBackgroundColor" Value="Color.Red" />
@@ -24,5 +16,4 @@
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-
 </Application>

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace BottomTabBar.iOS
+namespace BottomTabBarDemo.iOS
 {
     public class Application
     {

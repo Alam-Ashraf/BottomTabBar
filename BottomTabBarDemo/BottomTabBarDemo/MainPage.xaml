@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BottomTabBarDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Main Page"
+    mc:Ignorable="d">
+
+    <StackLayout BackgroundColor="#E6E6E6" VerticalOptions="Center">
+
+        <Button
+            BackgroundColor="Red"
+            Clicked="OnFixedTabClick"
+            Text="Fixed Tab"
+            TextColor="White" />
+
+        <Button
+            BackgroundColor="Red"
+            Clicked="OnScrollableTabClick"
+            Text="Scrollable Tab"
+            TextColor="White" />
+
+    </StackLayout>
+
+</ContentPage>

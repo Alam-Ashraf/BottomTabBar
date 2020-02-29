@@ -1,6 +1,6 @@
 # Bottom Tab Bar
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+[Nuget : BottomTabBar Version [1.0.0]](https://www.nuget.org/packages/BottomTabBar/)
 
 ![BottomTabBar](https://user-images.githubusercontent.com/48187633/73196594-dfbdb980-4155-11ea-8846-2e9f03bee9cd.gif)
 

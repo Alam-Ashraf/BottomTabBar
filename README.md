@@ -1,6 +1,12 @@
 # Bottom Tab Bar
 
-<pre class="nuget-button" data-nugetbutton-link="http://nuget.prabir.me/nuget/Packages(Id='Facebook',Version='5.2.0.0')">Install-Package Facebook</pre>
+<script type="text/javascript">
+	(function () {
+		var nb = document.createElement('script'); nb.type = 'text/javascript'; nb.async = true;
+		nb.src = 'http://s.prabir.me/nuget-button/0.2.1/nuget-button.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nb, s);
+	})();
+</script>
 
 [Nuget : BottomTabBar Version [1.0.0]](https://www.nuget.org/packages/BottomTabBar/)
 

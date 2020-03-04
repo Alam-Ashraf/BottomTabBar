@@ -1,6 +1,6 @@
 # Bottom Tab Bar
 
-<pre class="nuget-button" data-nugetbutton-link="false">Install-Package AzureToolkit</pre>
+<pre class="nuget-button" data-nugetbutton-link="http://nuget.prabir.me/nuget/Packages(Id='Facebook',Version='5.2.0.0')">Install-Package Facebook</pre>
 
 [Nuget : BottomTabBar Version [1.0.0]](https://www.nuget.org/packages/BottomTabBar/)
 

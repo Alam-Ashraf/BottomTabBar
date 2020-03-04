@@ -1,6 +1,6 @@
 # Bottom Tab Bar
 
-pre class="nuget-button" data-nugetbutton-link="false">Install-Package AzureToolkit</pre>
+<pre class="nuget-button" data-nugetbutton-link="false">Install-Package AzureToolkit</pre>
 
 [Nuget : BottomTabBar Version [1.0.0]](https://www.nuget.org/packages/BottomTabBar/)
 
